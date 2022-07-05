@@ -1,0 +1,63 @@
+// 将键绑定放在此文件中以覆盖默认值
+[
+    // Toggle between terminal and editor focus
+    { "key": "ctrl+j", "command": "workbench.action.terminal.focus"},
+    { "key": "ctrl+j", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"},
+    {
+        "key": "ctrl+y",
+        "command": "workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-cmake.debugTarget",
+        "when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "shift+ctrl+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "shift+ctrl+d",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "alt+a s",
+        "command": "workbench.action.splitEditor",
+    },
+    {
+        "key": "alt+a v",
+        "command": "workbench.action.splitEditorOrthogonal",
+    },
+
+    {
+        "key": "alt+a h",
+        "command": "workbench.action.focusLeftGroup",
+    },
+    {
+        "key": "alt+a l",
+        "command": "workbench.action.focusRightGroup",
+    },
+    {
+        "key": "alt+a k",
+        "command": "workbench.action.focusAboveGroup",
+    },
+    {
+        "key": "alt+a j",
+        "command": "workbench.action.focusBelowGroup",
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.closeActiveEditor",
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command":"workbench.action.toggleSidebarVisibility",
+    }
+]
